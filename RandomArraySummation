@@ -1,0 +1,27 @@
+#TabularArray - Nolasco
+import random
+
+arr = []
+arr1 = []
+arr2 = []
+arr3 = []
+
+mainlist = [arr, arr1, arr2, arr3]
+
+for i in range(4):
+    m = random.randint(1,100)
+    f = random.randint(1,100)
+    j = random.randint(1,100)
+    z = random.randint(1,100)
+    arr.append(m)
+    arr1.append(f)
+    arr2.append(j)
+    arr3.append(z)
+
+for i in mainlist:
+    print(i)
+
+print("The sum of row 1 is ", sum(arr))
+print("The sum of row 2 is ", sum(arr1))
+print("The sum of row 3 is ", sum(arr2))
+print("The sum of row 4 is ", sum(arr3))
