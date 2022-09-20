@@ -1,0 +1,25 @@
+n = int(input("Input integer for row: "))
+m = int(input("Input integer for collumn: "))
+arr = []
+
+y = 1
+for x in range(m):
+    counter = y
+    for i in range(0, n):
+        arr.append(counter)
+        counter += 1
+    print(str(arr).replace(',', '').replace('[', '').replace(']', ''))
+    arr = []
+    y += 1
+
+print(" ")
+y = 1
+for x in range(m):
+    counter = y
+    for i in range(0, n):
+        arr.append(counter)
+        counter += 1
+    arr.reverse()
+    print(str(arr).replace(',', '').replace('[', '').replace(']', ''))
+    arr = []
+    y += 1
